@@ -1,0 +1,32 @@
+{
+    "open_close_interaction": true,
+    "pickup_put_interaction": true,
+    "pickup_objects": [
+        "Egg"
+    ],
+    "acceptable_receptacles": [
+        "CounterTop",
+        "TableTop",
+        "Sink",
+        "Bowl",
+        "Fridge",
+        "Drawer",
+        "Cup",
+        "GarbageCan",
+        "Cabinet",
+        "Pot",
+        "Microwave",
+        "Mug"
+    ],
+    "openable_objects": [
+        "Fridge"
+    ],
+    "scene_id": "FloorPlan12",
+    "grayscale": true,
+    "resolution": [64, 64],
+    "task": {
+        "task_name": "PickUpTask",
+        "target_objects": {"Egg": 10},
+        "movement_reward": -1
+    }
+}
