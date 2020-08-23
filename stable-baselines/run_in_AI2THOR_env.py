@@ -489,14 +489,14 @@ env = make_vec_env(lambda: env, n_envs=1)
 # generate_expert_traj(model, '/home/user/Documents/Zeyu/stable-baselines/stable_baselines/gail/dataset/ai2thor', n_timesteps=4000, n_episodes=50)
 
 # Load the expert dataset
-# dataset = ExpertDataset(expert_path='/home/user/Documents/Zeyu/cups-rl2_metadata_collection (manual)/data/floorplan12.npz', traj_limitation=10, verbose=1)
+dataset = ExpertDataset(expert_path='/home/user/Documents/Zeyu/cups-rl2_metadata_collection (manual)/data/floorplan12.npz', traj_limitation=10, verbose=1)
 
-# model = GAIL('MlpPolicy', env, dataset, verbose=1)
+model = GAIL('MlpPolicy', env, dataset, verbose=1)
 # # Note: in practice, you need to train for 1M steps to have a working policy
-# model.learn(total_timesteps=10000)
-# model.save("floorplan12_10000(2)")
+model.learn(total_timesteps=10000)
+model.save("floorplan12_10000(2)")
 
-# del model # remove to demonstrate saving and loading
+del model # remove to demonstrate saving and loading
 
 model = GAIL.load("/home/user/Documents/Zeyu/stable-baselines/floorplan12_10000(2)")
 
