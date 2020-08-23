@@ -15,6 +15,6 @@ cups_rl_data_collection(manual) is modified from cups-rl (https://github.com/The
 
 stable-baselines is modified from Stable Baselines (https://stable-baselines.readthedocs.io/en/master/) with newly defined env for AI2THOR in run_in_AI2THOR_env.py. To use it:<br/> 1. follow https://stable-baselines.readthedocs.io/en/master/index.html to install stable-baselines<br/>
 2. copy GAIL-for-AI2THOR/stable-baselines/run_in_AI2THOR_env.py to stable-baselines root directory<br/>
-3. prepare the data generated from cups_rl_data_collection(manual) in the same way as GAIL-for-AI2THOR/cups_rl_data_collection(manual)/data/floorplan12.npz. Change line 492 of GAIL-for-AI2THOR/stable-baselines/run_in_AI2THOR_env.py to the corresponding data path. Modify the model save/load path accordingly.
+3. prepare the data generated from cups_rl_data_collection(manual) in the same way as GAIL-for-AI2THOR/cups_rl_data_collection(manual)/data/floorplan12.npz. Change line 492 of GAIL-for-AI2THOR/stable-baselines/run_in_AI2THOR_env.py to the corresponding data path. Modify the model save/load path accordingly.<br/>
 4. run run_in_AI2THOR_env.py to start training. Currently this env supports 21 actions for the agent in AI2THOR envirnment. Feel free to add more if needed. Please refer to https://stable-baselines.readthedocs.io/en/master/modules/gail.html for more details on how to run and refine tune GAIL.
  
